@@ -1,0 +1,32 @@
+[global_config]
+  use_system_font = False
+  title_hide_sizetext = True
+
+[keybindings]
+
+[profiles]
+  [[default]]
+    use_system_font = False
+    font = Hack Nerd Font Mono 14
+    background_color = "#1a1a1a"
+    foreground_color = "#f1f1f1"
+    cursor_color = "#ffffff"
+    # palette order: black red green yellow blue magenta cyan white (normal then bright)
+    palette = "#121212:#a52aff:#7129ff:#3d2aff:#2b4fff:#2883ff:#28b9ff:#f1f1f1:#666666:#ba5aff:#905aff:#685aff:#5c78ff:#5ea2ff:#5ac8ff:#ffffff"
+    background_darkness = 0.95
+    background_type = transparent
+    scrollback_lines = 5000
+    show_titlebar = False
+    copy_on_selection = True
+
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+
+[plugins]
